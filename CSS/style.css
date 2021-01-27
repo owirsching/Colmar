@@ -15,7 +15,6 @@ nav {
     position: fixed;
     top: 0;
     height: 64 px;
-    align-items: center;
     background: #ffffff;
 }
 
@@ -62,7 +61,7 @@ nav {
     margin-top: 64px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
 
     .first-block img {
         width: 60%;
@@ -83,7 +82,7 @@ nav {
     }
 
     .bold {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 50px;
         line-height: 1.25;
         margin: 0 0;
@@ -112,7 +111,7 @@ nav {
 
 /* SECOND BLOCK */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     .second-block {
         display: flex;
         width: 100%;
@@ -147,6 +146,7 @@ nav {
     .information .details {
         width: 65%;
         margin-left: 20px;
+        min-width: 175px;
     }
 
     .information .link {
@@ -155,21 +155,24 @@ nav {
         margin-top: 8px;
     }
 
-    .ite {
-        width: 100%;
+    .item {
+        display: flex;
+        align-items: flex-start;
     }
 
     .item .semi-bold {
         margin-bottom: 8px;
+        margin-top: 5px;
     }
 
     .item:hover {
         background: rgb(226, 226, 226);
+        transition: color, 700ms, ease-in, 400ms;
     }
 
     .practice .bold {
         margin-top: 16px;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .practice .quote {
@@ -181,5 +184,126 @@ nav {
     .practice .comment {
         font-family: Roboto;
         margin-bottom: 16px;
+        font-weight: bolder;
     }
 }
+
+/* THIRD BLOCK */
+@media only screen and (min-width: 1000px) {
+    .third-block {
+        width: 100%;
+        background:rgb(226, 226, 226);
+    }
+
+    .third-block .bold {
+        padding: 32px 0;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .third-block .courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .third-block .courses .course {
+        margin: 0px 16px;
+        background: #fff;
+        width: 25%;
+        margin-bottom: 32px;
+    }
+
+    .courses .course:hover {
+        background:rgb(255, 223, 40);
+        transition: color, 700ms, ease-in, 400ms;
+    }
+
+    .third-block .courses .course .description{
+        margin-left: 16px;
+        margin-bottom: 24px;
+    }
+
+    .course img {
+        height: auto;
+        width: 100%;
+    }
+
+    .course .semi-bold {
+        margin: 0 0;
+    }
+
+    .courseimg {
+        margin-bottom: 8px;
+    }
+
+    .course p {
+        margin: 8px 0;
+    }
+
+}
+/* THESIS EXHIBIT */
+
+@media only screen and (min-width: 1000px) {
+    .thesis-exhibit {
+        display: flex;
+        width: 100%;
+    }
+
+    .thesis-exhibit .projects {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .thesis-exhibit .projects .project {
+        display: flex;
+    }
+
+    .thesis-exhibit .video {
+        width: 60%;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        margin-top: 0;
+    }
+
+    .thesis-exhibit video {
+        width: 100%;
+    }
+
+    #bold {
+        padding: 32px 0;
+        text-align: center;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .video .semi-bold {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    .course .details {
+        width: 40%;
+        margin-left: 8px;
+        min-width: 175px;
+    }
+
+    .project img {
+        width: 200px;
+        height: auto;
+        margin: 16px 16px;
+    }
+
+    .project:hover {
+        background:rgb(226, 226, 226);
+    }
+}
+
+/* FOOTER */
+
+@media only screen and (min-width: 1000px) {
+}
+
+
