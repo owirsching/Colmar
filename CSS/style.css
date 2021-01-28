@@ -517,6 +517,10 @@ body {
         margin: 8px 0;
     }
 
+    .course .semi-bold {
+        font-size: 30px;
+    }
+
 }
 /* THESIS EXHIBIT */
 
@@ -551,7 +555,7 @@ body {
     #bold {
         padding: 32px 0;
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
         margin: 0;
     }
 
@@ -617,6 +621,7 @@ body {
     .video .semi-bold {
         margin-top: 24px;
         margin-bottom: 8px;
+        font-size: 30px;
     }
 
     .course .details {
