@@ -111,6 +111,7 @@ body {
         padding-bottom: 24px;
         margin-left: 32px;
         margin-top: 32px;
+        margin-right: 16px;
     }
 
     .bold {
@@ -470,6 +471,7 @@ body {
     .third-block .bold {
         padding-top: 32px;
         margin-bottom: 16px;
+        margin-top: 0;
         text-align: center;
         border-top: 1px solid rgb(226, 226, 226);
     }
