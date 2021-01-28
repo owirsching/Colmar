@@ -389,6 +389,7 @@ body {
     .third-block .courses .course .description{
         margin-left: 16px;
         margin-bottom: 12px;
+        margin-right: 5px;
     }
 
     .course img {
@@ -409,64 +410,60 @@ body {
     }
 
 }
-/* THESIS EXHIBIT */
 
 @media only screen and (min-width: 1296px) {
-    .thesis-exhibit {
-        display: flex;
+    .third-block {
         width: 100%;
+        background:rgb(226, 226, 226);
     }
 
-    .thesis-exhibit .projects {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 32px;
-    }
-
-    .thesis-exhibit .projects .project {
-        display: flex;
-    }
-
-    .thesis-exhibit .video {
-        width: 60%;
-        margin-left: 24px;
-        margin-right: 24px;
-        margin-bottom: 24px;
-        margin-top: 0;
-    }
-
-    .thesis-exhibit video {
-        width: 100%;
-    }
-
-    #bold {
+    .third-block .bold {
         padding: 32px 0;
         text-align: center;
         font-size: 40px;
-        margin: 0;
     }
 
-    .video .semi-bold {
-        margin-top: 24px;
+    .third-block .courses {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .third-block .courses .course {
+        margin: 0px 16px;
+        background: #fff;
+        width: 25%;
+        margin-bottom: 32px;
+    }
+
+    .courses .course:hover {
+        background:rgb(255, 223, 40);
+        transition: color, 700ms, ease-in, 400ms;
+    }
+
+    .third-block .courses .course .description{
+        margin-left: 16px;
+        margin-bottom: 24px;
+    }
+
+    .course img {
+        height: auto;
+        width: 100%;
+    }
+
+    .course .semi-bold {
+        margin: 0 0;
+    }
+
+    .courseimg {
         margin-bottom: 8px;
     }
 
-    .course .details {
-        width: 40%;
-        margin-left: 8px;
-        min-width: 175px;
-    }
-
-    .project img {
-        width: 200px;
-        height: auto;
-        margin: 16px 16px;
-    }
-
-    .project:hover {
-        background:rgb(226, 226, 226);
+    .course p {
+        margin: 8px 0;
     }
 }
+
 
 @media only screen and (min-width: 1297px) {
     .third-block {
@@ -523,7 +520,66 @@ body {
 }
 /* THESIS EXHIBIT */
 
-@media only screen and (min-width: 1000px) {
+@media screen and (min-width: 740px) and (max-width: 1296px) {
+    .thesis-exhibit {
+        display: flex;
+        width: 100%;
+    }
+
+    .thesis-exhibit .projects {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .thesis-exhibit .projects .project {
+        display: flex;
+    }
+
+    .thesis-exhibit .video {
+        width: 60%;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        margin-top: 0;
+    }
+
+    .thesis-exhibit video {
+        width: 100%;
+    }
+
+    #bold {
+        padding: 32px 0;
+        text-align: center;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .video .semi-bold {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    .project img {
+        width: 125px;
+        height: auto;
+        margin: 8px 8px;
+    }
+
+    .project:hover {
+        background:rgb(226, 226, 226);
+    }
+
+    .project .details .semi-bold {
+        font-size: 20px;
+    }
+
+    .prokect .details p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1297px) {
     .thesis-exhibit {
         display: flex;
         width: 100%;
@@ -582,13 +638,14 @@ body {
 
 /* FOOTER */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 740px) {
     footer {
         display: flex;
         justify-content: space-between;
         margin-left: 24px;
         margin-top: 16px;
         border-top: #000;
+        align-items: center;
     }
 
     .terms {
