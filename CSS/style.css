@@ -200,7 +200,84 @@ body {
 
 /* SECOND BLOCK */
 
-@media only screen and (min-width: 1000px) {
+@media screen and (min-width: 794px) and (max-width: 1296px) {
+    .second-block {
+        display: flex;
+        width: 100%;
+    }
+
+    .practice {
+        display: flex;
+        flex-direction: column;
+        margin: 32px 24px;
+        width: 60%;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-top: 16px;
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .information img {
+        width: 80%;
+    }
+
+    .information .item {
+        display: flex;
+        padding: 8px 0;
+        padding-left: 8px;
+        padding-bottom: 0;
+    }
+
+    .information .details {
+        width: 65%;
+        min-width: 150px;
+    }
+
+    .information .link {
+        font-family: Roboto;
+        color: rgb(75, 198, 255);
+        margin-top: 4px;
+    }
+
+    .item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .item .semi-bold {
+        margin-bottom: 4px;
+        margin-top: 2.5px;
+    }
+
+    .item:hover {
+        background: rgb(226, 226, 226);
+        transition: color, 700ms, ease-in, 400ms;
+    }
+
+    .practice .bold {
+        margin-top: 16px;
+        font-size: 30px;
+    }
+
+    .practice .quote {
+        margin-bottom: 8px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .practice .comment {
+        font-family: Roboto;
+        margin-bottom: 16px;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (min-width: 1297px) {
     .second-block {
         display: flex;
         width: 100%;
@@ -278,7 +355,7 @@ body {
 }
 
 /* THIRD BLOCK */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1297px) {
     .third-block {
         width: 100%;
         background:rgb(226, 226, 226);
