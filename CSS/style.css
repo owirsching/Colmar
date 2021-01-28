@@ -670,7 +670,47 @@ body {
 }
 /* THESIS EXHIBIT */
 
+@media screen and (max-width: 739px) {
+    #desktop-thesis {
+        display: none;
+    }
+
+    #mobile-thesis {
+        width: 100%;
+        height: auto;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .thesis-exhibit {
+        display: flex;
+        justify-content: center;
+    }
+
+    #bold {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 32px;
+        margin-bottom: 0;
+        border-top: 1px solid rgb(226, 226, 226);
+    }
+
+    .terms {
+        display: none;
+    }
+
+    footer {
+        margin-left: 16px;
+    }
+}
+
+
 @media screen and (min-width: 740px) and (max-width: 1296px) {
+
+    #mobile-thesis {
+        display:none;
+    }
+
     .thesis-exhibit {
         display: flex;
         width: 100%;
@@ -730,6 +770,11 @@ body {
 }
 
 @media only screen and (min-width: 1297px) {
+
+    #mobile-thesis {
+        display: none;
+    }
+
     .thesis-exhibit {
         display: flex;
         width: 100%;
